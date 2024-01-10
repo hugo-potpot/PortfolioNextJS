@@ -41,7 +41,7 @@ const ProjectsPage = () => {
             },
             {
                 title: 'Génération Fractal',
-                image: '/image/projects/julia.jpg',
+                image: '/image/projects/fractals.png',
                 description: 'Génération de Fractal en Java ',
                 githubLink:'https://gitlab.univ-artois.fr/sae-joly-potier-riquart/fractales-base',
             }
