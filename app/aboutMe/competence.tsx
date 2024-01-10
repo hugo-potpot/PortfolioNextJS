@@ -1,5 +1,5 @@
 import React from 'react';
-import CompetenceArticle from "@/app/components/aboutMe/competenceArticle";
+import CompetenceArticle from "@/app/aboutMe/competenceArticle";
 
 const Competence = () => {
     const skills = [

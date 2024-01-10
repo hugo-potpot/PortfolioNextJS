@@ -1,9 +1,10 @@
 import React from 'react';
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
     const linkedinURL = process.env.LINKEDIN;
     const email = process.env.EMAIL;
+    const githubURL = process.env.GITHUB;
 
     return (
         <footer className="bg-gray-925 text-white py-6">
@@ -13,18 +14,27 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center">
                     <a
+                        href={githubURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-white mr-4"
+
+                    >
+                        <FaGithub size={24}/>
+                    </a>
+                    <a
                         href={linkedinURL}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-400 hover:text-white mr-4"
                     >
-                        <FaLinkedin size={24} />
+                        <FaLinkedin size={24}/>
                     </a>
                     <a
                         href={`mailto:${email}`}
                         className="text-gray-400 hover:text-white"
                     >
-                        <FaEnvelope size={24} />
+                        <FaEnvelope size={24}/>
                     </a>
                 </div>
             </div>
