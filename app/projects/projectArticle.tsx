@@ -19,6 +19,16 @@ const ProjectArticle = (props: ProjectArticleProps) => {
                 <h2 className="text-xl font-semibold mb-2 text-gray-800">{project.title}</h2>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="flex justify-between">
+                    {project.link && (
+                        <a
+                            href={project.link}
+                            className="text-blue-500 hover:text-blue-700"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            En savoir plus...
+                        </a>
+                    )}
                     {project?.githubLink && (
                         <a
                             href={project.githubLink}
@@ -27,16 +37,6 @@ const ProjectArticle = (props: ProjectArticleProps) => {
                             rel="noopener noreferrer"
                         >
                             <FaGithub />
-                        </a>
-                    )}
-                    {project.demoLink && (
-                        <a
-                            href={project.demoLink}
-                            className="text-blue-500 hover:text-blue-700"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Démo
                         </a>
                     )}
                 </div>

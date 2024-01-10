@@ -6,7 +6,7 @@ export interface Project {
     title: string;
     image: string;
     description: string;
-    demoLink?: string;
+    link?: string;
     githubLink?: string;
 }
 const ProjectsPage = () => {
@@ -15,7 +15,7 @@ const ProjectsPage = () => {
                 title: 'SneekMarket',
                 image: '/image/projects/sneekmarket.png',
                 description: 'Site de configuration de bot Discord pour SneekMarket.',
-                demoLink: 'https://sneekmarket.com/',
+                link: 'https://sneekmarket.com/',
             },
             {
                 title: 'SneekFinder',
@@ -37,7 +37,7 @@ const ProjectsPage = () => {
                 image: '/image/projects/imposteur.png',
                 description: "Jeu de l'imposteur en ligne fait en React",
                 githubLink:'https://github.com/hugo-potpot/Imposteur',
-                demoLink: 'https://yoannjly.com/',
+                link: 'https://yoannjly.com/',
             },
             {
                 title: 'Génération Fractal',
